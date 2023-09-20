@@ -1,0 +1,287 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --main-color: #d4c9d4;
+    --black-color: #5b1b02;
+    --border: 0.1rem solid rgba(255,255,255, 0.4);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/* base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9 rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem ;
+  background-color: rgb(238, 223, 226);
+}
+
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  border-radius: 3rem;
+  background-color: var(--black-color);
+}
+
+body{
+    background-color: var(--main-color);
+    height: 200vh;
+}
+section{
+    padding: 3.5rem 7%;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: antiquewhite;
+    background-color: maroon;
+    cursor: pointer;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.heading{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.1rem solid rgb(200, 118, 149);
+}
+
+.heading span{
+  color: #60020a;
+  text-transform: uppercase;
+
+}
+
+  /* header start */
+  .header .logo img{
+    height: 7rem;
+  }
+
+  .header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(255, 223, 228, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+  }
+
+  .header .navbar .active,
+  .header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+  }
+
+  .header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+  }
+  /* header end */
+
+  /* home start */
+  .home{
+    height: 100dvh;
+    background: url(../images/arkaplan.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    margin-bottom: -14.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .home .content{
+    max-width: 60rem;
+  }
+  .home .content h3{
+    font-size: 6rem;
+    color: rgb(160, 10, 32);
+  }
+  .home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(255, 255, 255);
+  }
+  /* home end */
+
+  /* menu start */
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 3rem;
+  background-color: aliceblue;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu .box-container .box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu .box-container .box .menu-category{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.menu .box-container .box h3{
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+  /* menu end */
+
+  /* products start */
+
+.products .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.products .box-container .box{
+  text-align: center;
+  background-color: #fed793;
+  position: relative;
+  border-radius: 3rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  }
+
+  .products .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+
+  }
+
+  .products .box-container .box .box-head .title{
+    font-size: 1.4rem;
+  }
+
+  .products .box-container .box .box-head .name{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+  }
+
+  .products .box-container .dark-bg .box-head .name,
+  .products .box-container .dark-bg .box-head .title {
+    color: aliceblue;
+  }
+  .products .box-container img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+  }
+
+  .products .box-container .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .products .box-container .box-bottom .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products .box-container .box-bottom .info .price{
+    font-size: 3rem;
+    color: beige;
+  }
+
+  .products .box-container .box-bottom .product-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid white;
+    color: #f7e9ef;
+  }
+  /* products end */
+
+  /* about section start */
+
+  
