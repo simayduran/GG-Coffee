@@ -282,6 +282,51 @@ a{
   }
   /* products end */
 
-  /* about section start */
+  /* about start */
+
+  .about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+
+  .about .row .image{
+    flex: 1 1 45rem;
+  }
+
+  .about .row .img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
+  .about .row .content{
+    flex: 1 1 45rem;
+  }
+   .about .row .content h3{
+    font-size: 3rem;
+    color: white;
+   }
+
+   .about .row .content p{
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+   }
+
+
+
+
+
+
+
+
+
+  /* about end */
 
   
