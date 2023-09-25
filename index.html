@@ -27,7 +27,6 @@
         <a href="#">Products</a>
         <a href="#">Review</a>
         <a href="#">Contact</a>
-        <a href="#">Blogs</a>
       </nav>
 
       <div class="buttons">
@@ -37,9 +36,14 @@
         <button>
           <i class="fas fa-shopping-cart"></i>
         </button>
-        <button>
+        <button id="menu-btn">
           <i class="fas fa-bars"></i>
         </button>
+      </div>
+
+      <div class="search-form">
+        <input type="text" class="search-input" id="search-box" placeholder="search here">
+        <i class="fas fa-search"></i>
       </div>
     </header>
     <!--  header section end-->
@@ -216,8 +220,126 @@
     <!-- about section end -->
 
     <!-- review section start -->
-    <section class="review"></section>
+    <section class="review">
+      <h1 class="heading"> customer's <span> review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/indir.png" alt="quote">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Facere, ducimus similique ipsam placeat enim iusto, vitae 
+            esse consequatur nostrum et minima accusamus harum veniam 
+            cupiditate consectetur tempore quibusdam corporis odio.
+          </p>
+          <img src="images/dean.jpeg" alt="avatar" class="user">
+          <h3>Dean W.</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/indir.png" alt="quote">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Facere, ducimus similique ipsam placeat enim iusto, vitae 
+            esse consequatur nostrum et minima accusamus harum veniam 
+            cupiditate consectetur tempore quibusdam corporis odio.
+          </p>
+          <img src="images/lorelai.jpeg" alt="avatar" class="user">
+          <h3>Lorelai G.</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/indir.png" alt="quote">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Facere, ducimus similique ipsam placeat enim iusto, vitae 
+            esse consequatur nostrum et minima accusamus harum veniam 
+            cupiditate consectetur tempore quibusdam corporis odio.
+          </p>
+          <img src="images/luke.jpeg" alt="avatar" class="user">
+          <h3>Luke D.</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- review section end -->
+
+    <!-- contact section start -->
+    <section class="contact">
+      <h1 class="heading"> contact <span> us</span></h1>
+      <div class="row">
+        <iframe class="map"
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.911538771022!2d-118.34106681738419!3d34.14860524334729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc9a2ff7f4b%3A0x6da03ff81cd0ce80!2sStars%20Hollow!5e0!3m2!1str!2str!4v1695240610738!5m2!1str!2str" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"</iframe>
+        <form>
+          <h3>get in touch</h3>
+          <div class="inputBox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="name">
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="name">
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="name">
+          </div>
+          <input type="submit" class="btn" value="contact now">
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+   <section class="footer">
+     <div class="search">
+      <input type="text" class="search-input" 
+      placeholder="Search">
+      </input>
+       <button class="btn btn-primary">Search</button>
+      </div>
+     <div class="share">
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="links">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Menu</a>
+      <a href="#">Products</a>
+      <a href="#">Review</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="credit">
+      created by <span>Simay Büşra Duran</span> | all rights reserved 
+
+    </div>
+   </section>
+    <!-- footer section end -->
 
   </body>
 </html>
